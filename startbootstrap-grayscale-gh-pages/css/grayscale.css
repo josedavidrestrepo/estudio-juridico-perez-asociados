@@ -309,3 +309,11 @@ footer {
     font-size: 1.2em;
     text-align: justify;
 }
+
+.resaltado {
+  color: #3c6360;
+}
+
+.text-white-100 {
+  color: rgba(255, 255, 255, 0.87)!important;
+}
