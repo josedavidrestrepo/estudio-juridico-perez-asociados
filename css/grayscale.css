@@ -318,3 +318,7 @@ footer {
 .text-white-100 {
   color: rgba(255, 255, 255, 0.87)!important;
 }
+
+.text-green {
+  color: #64a19d;
+}
