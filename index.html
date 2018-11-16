@@ -289,7 +289,7 @@
                 <div class="form-group">
                   <textarea class="form-control" id="textoForm" rows="5" placeholder="Mensaje"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary mx-auto">Enviar Mensaje</button>
+                <button onclick="sendMail(); return false" class="btn btn-primary mx-auto">Enviar Mensaje</button>
               </form>
 
             </div>
@@ -362,6 +362,24 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+
+    <script>
+      
+      function sendMail() {
+          var contenido = escape(document.getElementById('textoForm').value)
+
+          contenido += escape('\n\nNombre: ' + document.getElementById('nombreForm').value)
+          contenido += escape('\nEmail: ' + document.getElementById('emailForm').value)
+          contenido += escape('\n\n')
+
+          var link = "mailto:vperez@estudiojuridicopa.com"
+                  + "?subject=" + escape("Contacto de Usuario")
+                  + "&body=" + contenido
+          ;
+
+          window.location.href = link;
+      }
+    </script>
 
   </body>
 
