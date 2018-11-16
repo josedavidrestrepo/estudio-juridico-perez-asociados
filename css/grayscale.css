@@ -322,3 +322,17 @@ footer {
 .text-green {
   color: #64a19d;
 }
+
+.separador {
+  margin-top: 10px;
+}
+
+.estudios {
+  font-size: 0.85em;
+  margin-top: 8px;
+}
+
+.practica {
+  font-size: 0.85em;
+  margin: 0;
+}
